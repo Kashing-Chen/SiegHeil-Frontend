@@ -1,0 +1,27 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "module": "esnext",
+  "target": "es5",
+  "moduleResolution": "node",
+  "strict": true,
+  "esModuleInterop": true,
+  "skipLibCheck": true,
+  "forceConsistentCasingInFileNames": true,
+  "outDir": "./dist",
+  "composite": true,
+  "declaration": true,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["axios", "node"],
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules"]
+}
